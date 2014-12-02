@@ -1,0 +1,412 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RobinTheilade.UnityFramework</name>
+    </assembly>
+    <members>
+        <member name="T:RobinTheilade.UnityFramework.GUILayoutEx">
+            <summary>
+            Provides helper methods for working with the <see cref="T:UnityEngine.GUILayout"/> class.
+            </summary>
+            <summary>
+            Provides helper methods for working with the <see cref="T:UnityEngine.GUILayout"/> class.
+            </summary>
+        </member>
+        <member name="M:RobinTheilade.UnityFramework.GUILayoutEx.Horizontal(System.Action,UnityEngine.GUILayoutOption[])">
+            <summary>
+            All controls rendered inside this method will be placed horizontically below each other.
+            </summary>
+            <param name="action">
+            The callback that renders the controls.
+            </param>
+            <param name="options">
+            An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the style.
+            </param>
+        </member>
+        <member name="M:RobinTheilade.UnityFramework.GUILayoutEx.Horizontal(System.Action,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+            <summary>
+            All controls rendered inside this method will be placed horizontically below each other.
+            </summary>
+            <param name="action">
+            The callback that renders the controls.
+            </param>
+            <param name="style">
+            The style to use for background image and padding values. If left out, the background is transparent.
+            </param>
+            <param name="options">
+            An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the style.
+            </param>
+        </member>
+        <member name="M:RobinTheilade.UnityFramework.GUILayoutEx.Horizontal(System.Action,UnityEngine.GUIContent,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+            <summary>
+            All controls rendered inside this method will be placed horizontically below each other.
+            </summary>
+            <param name="action">
+            The callback that renders the controls.
+            </param>
+            <param name="content">
+            The text, image, and tooltip for this group.
+            </param>
+            <param name="style">
+            The style to use for background image and padding values. If left out, the background is transparent.
+            </param>
+            <param name="options">
+            An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the style.
+            </param>
+        </member>
+        <member name="M:RobinTheilade.UnityFramework.GUILayoutEx.Horizontal(System.Action,System.String,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+            <summary>
+            All controls rendered inside this method will be placed horizontically below each other.
+            </summary>
+            <param name="action">
+            The callback that renders the controls.
+            </param>
+            <param name="text">
+            The text to display on group.
+            </param>
+            <param name="style">
+            The style to use for background image and padding values. If left out, the background is transparent.
+            </param>
+            <param name="options">
+            An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the style.
+            </param>
+        </member>
+        <member name="M:RobinTheilade.UnityFramework.GUILayoutEx.Horizontal(System.Action,UnityEngine.Texture2D,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+            <summary>
+            All controls rendered inside this method will be placed horizontically below each other.
+            </summary>
+            <param name="action">
+            The callback that renders the controls.
+            </param>
+            <param name="image">
+            The texture to display on group.
+            </param>
+            <param name="style">
+            The style to use for background image and padding values. If left out, the background is transparent.
+            </param>
+            <param name="options">
+            An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the style.
+            </param>
+        </member>
+        <member name="M:RobinTheilade.UnityFramework.GUILayoutEx.Vertical(System.Action,UnityEngine.GUILayoutOption[])">
+            <summary>
+            All controls rendered inside this method will be placed vertically below each other.
+            </summary>
+            <param name="action">
+            The callback that renders the controls.
+            </param>
+            <param name="options">
+            An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the style.
+            </param>
+        </member>
+        <member name="M:RobinTheilade.UnityFramework.GUILayoutEx.Vertical(System.Action,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+            <summary>
+            All controls rendered inside this method will be placed vertically below each other.
+            </summary>
+            <param name="action">
+            The callback that renders the controls.
+            </param>
+            <param name="style">
+            The style to use for background image and padding values. If left out, the background is transparent.
+            </param>
+            <param name="options">
+            An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the style.
+            </param>
+        </member>
+        <member name="M:RobinTheilade.UnityFramework.GUILayoutEx.Vertical(System.Action,UnityEngine.GUIContent,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+            <summary>
+            All controls rendered inside this method will be placed vertically below each other.
+            </summary>
+            <param name="action">
+            The callback that renders the controls.
+            </param>
+            <param name="content">
+            The text, image, and tooltip for this group.
+            </param>
+            <param name="style">
+            The style to use for background image and padding values. If left out, the background is transparent.
+            </param>
+            <param name="options">
+            An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the style.
+            </param>
+        </member>
+        <member name="M:RobinTheilade.UnityFramework.GUILayoutEx.Vertical(System.Action,System.String,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+            <summary>
+            All controls rendered inside this method will be placed vertically below each other.
+            </summary>
+            <param name="action">
+            The callback that renders the controls.
+            </param>
+            <param name="text">
+            The text to display on group.
+            </param>
+            <param name="style">
+            The style to use for background image and padding values. If left out, the background is transparent.
+            </param>
+            <param name="options">
+            An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the style.
+            </param>
+        </member>
+        <member name="M:RobinTheilade.UnityFramework.GUILayoutEx.Vertical(System.Action,UnityEngine.Texture2D,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+            <summary>
+            All controls rendered inside this method will be placed vertically below each other.
+            </summary>
+            <param name="action">
+            The callback that renders the controls.
+            </param>
+            <param name="image">
+            The texture to display on group.
+            </param>
+            <param name="style">
+            The style to use for background image and padding values. If left out, the background is transparent.
+            </param>
+            <param name="options">
+            An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the style.
+            </param>
+        </member>
+        <member name="T:RobinTheilade.Measure">
+            <summary>
+            Provides methods for doing measurements of code execution.
+            </summary>
+        </member>
+        <member name="M:RobinTheilade.Measure.Time(System.Action)">
+            <summary>
+            Measures the time the specified <paramref name="action"/> takes to execute.
+            </summary>
+            <param name="action">
+            The action to measure.
+            </param>
+        </member>
+        <member name="M:RobinTheilade.Measure.DebugLogTime(System.String,System.Action)">
+            <summary>
+            Measures the time the specified <paramref name="action"/> takes to execute.
+            </summary>
+            <param name="caption">
+            The caption of the measurement.
+            </param>
+            <param name="action">
+            The action to measure.
+            </param>
+        </member>
+        <member name="T:RobinTheilade.Quadtree`1">
+            <summary>
+            A region quadtree implementation used for fast lookup in a two dimensional world.
+            </summary>
+            <typeparam name="T">
+            The type to store inside the tree.
+            </typeparam>
+            <remarks>
+            This implementation is not thread-safe.
+            </remarks>
+        </member>
+        <member name="F:RobinTheilade.Quadtree`1.nodeCapacity">
+            <summary>
+            The maximum number of nodes per tree.
+            </summary>
+        </member>
+        <member name="F:RobinTheilade.Quadtree`1.nodes">
+            <summary>
+            The nodes inside this region.
+            </summary>
+        </member>
+        <member name="F:RobinTheilade.Quadtree`1.children">
+            <summary>
+            The child trees inside this region.
+            </summary>
+        </member>
+        <member name="F:RobinTheilade.Quadtree`1.boundaries">
+            <summary>
+            The boundaries of this region.
+            </summary>
+        </member>
+        <member name="M:RobinTheilade.Quadtree`1.#ctor(UnityEngine.Rect,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Quadtree`1"/> class.
+            </summary>
+            <param name="boundaries">
+            The boundaries of the region.
+            </param>
+            <param name="nodeCapacity">
+            The maximum number of nodes per tree.
+            If the amount of nodes exceeds the tree will be subdivided into 4 sub trees.
+            A value of 32 seems fine in terms of insert and remove speed.
+            A value greater than 32 improves insert speed but slows down remove speed.
+            </param>
+        </member>
+        <member name="M:RobinTheilade.Quadtree`1.Insert(System.Single,System.Single,`0)">
+            <summary>
+            Inserts a value into the region.
+            </summary>
+            <param name="x">
+            The X component of the value's position.
+            </param>
+            <param name="y">
+            The y component of the value's position.
+            </param>
+            <param name="value">
+            The value to insert.
+            </param>
+            <returns>
+            true if the value was inserted into the region;
+            false if the value's position was outside the region.
+            </returns>
+        </member>
+        <member name="M:RobinTheilade.Quadtree`1.Insert(UnityEngine.Vector2,`0)">
+            <summary>
+            Inserts a value into the region.
+            </summary>
+            <param name="position">
+            The position of the value.
+            </param>
+            <param name="value">
+            The value to insert.
+            </param>
+            <returns>
+            true if the value was inserted into the region;
+            false if the value's position was outside the region.
+            </returns>
+        </member>
+        <member name="M:RobinTheilade.Quadtree`1.Insert(RobinTheilade.Quadtree{`0}.QuadtreeNode)">
+            <summary>
+            Inserts a node into the region.
+            </summary>
+            <param name="node">
+            The node to insert.
+            </param>
+            <returns>
+            true if the node was inserted into the region;
+            false if the position of the node was outside the region.
+            </returns>
+        </member>
+        <member name="M:RobinTheilade.Quadtree`1.Find(UnityEngine.Rect)">
+            <summary>
+            Returns the values that are within the specified <paramref name="range"/>.
+            </summary>
+            <param name="range">
+            A rectangle representing the region to query.
+            </param>
+            <returns>
+            Any value found inside the specified <paramref name="range"/>.
+            </returns>
+        </member>
+        <member name="M:RobinTheilade.Quadtree`1.Remove(System.Single,System.Single,`0)">
+            <summary>
+            Removes a value from the region.
+            </summary>
+            <param name="x">
+            The X component of the value's position.
+            </param>
+            <param name="z">
+            The Z component of the value's position.
+            </param>
+            <param name="value">
+            The value to remove.
+            </param>
+            <returns>
+            true if the value was removed from the region;
+            false if the value's position was outside the region.
+            </returns>
+        </member>
+        <member name="M:RobinTheilade.Quadtree`1.Remove(UnityEngine.Vector2,`0)">
+            <summary>
+            Removes a value from the region.
+            </summary>
+            <param name="position">
+            The position of the value.
+            </param>
+            <param name="value">
+            The value to remove.
+            </param>
+            <returns>
+            true if the value was removed from the region;
+            false if the value's position was outside the region.
+            </returns>
+        </member>
+        <member name="M:RobinTheilade.Quadtree`1.Subdivide">
+            <summary>
+            Splits the region into 4 new subregions and moves the existing values into the new subregions.
+            </summary>
+        </member>
+        <member name="M:RobinTheilade.Quadtree`1.Combine">
+            <summary>
+            Joins the contents of the children into this region and remove the child regions.
+            </summary>
+        </member>
+        <member name="P:RobinTheilade.Quadtree`1.Count">
+            <summary>
+            Gets the number of values inside this tree.
+            </summary>
+        </member>
+        <member name="T:RobinTheilade.Quadtree`1.QuadtreeNode">
+            <summary>
+            A single node inside a quadtree used for keeping values and their position.
+            </summary>
+        </member>
+        <member name="M:RobinTheilade.Quadtree`1.QuadtreeNode.#ctor(UnityEngine.Vector2,`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QuadtreeNode"/> class.
+            </summary>
+            <param name="position">
+            The position of the value.
+            </param>
+            <param name="value">
+            The value.
+            </param>
+        </member>
+        <member name="P:RobinTheilade.Quadtree`1.QuadtreeNode.Position">
+            <summary>
+            Gets the position of the value.
+            </summary>
+        </member>
+        <member name="P:RobinTheilade.Quadtree`1.QuadtreeNode.Value">
+            <summary>
+            Gets the value.
+            </summary>
+        </member>
+        <member name="T:RobinTheilade.Framework.RandomEx">
+            <summary>
+            Provides a set of helper methods for working with random values.
+            </summary>
+        </member>
+        <member name="M:RobinTheilade.Framework.RandomEx.Vector3XZ">
+            <summary>
+            Returns a random point inside a circle with a radius of 1.
+            The Y component is always 0.0.
+            </summary>
+            <returns>
+            The random vector.
+            </returns>
+        </member>
+        <member name="M:RobinTheilade.Framework.RandomEx.Vector3XZ(System.Single)">
+            <summary>
+            Returns a random point inside a circle.
+            The Y component is always 0.0.
+            </summary>
+            <param name="distance">
+            This distance from the center of the circle to the point.
+            </param>
+            <returns>
+            The random vector.
+            </returns>
+        </member>
+        <member name="T:RobinTheilade.Framework.TreeInstanceEx">
+            <summary>
+            Provides a set of helper methods for working with the <see cref="T:UnityEngine.TreeInstance"/> class.
+            </summary>
+        </member>
+        <member name="M:RobinTheilade.Framework.TreeInstanceEx.Same(UnityEngine.TreeInstance,UnityEngine.TreeInstance)">
+            <summary>
+            Compares two instances of <see cref="T:UnityEngine.TreeInstance"/>.
+            </summary>
+            <param name="instance1">
+            One of the <see cref="T:UnityEngine.TreeInstance"/>.
+            </param>
+            <param name="instance2">
+            The other <see cref="T:UnityEngine.TreeInstance"/>.
+            </param>
+            <returns>
+            true if the state of both instances are the same; otherwise false.
+            </returns>
+        </member>
+    </members>
+</doc>

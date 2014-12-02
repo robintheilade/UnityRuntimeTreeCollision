@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RobinTheilade.RuntimeTreeCollision</name>
+    </assembly>
+    <members>
+        <member name="T:RobinTheilade.RuntimeTreeCollision.RuntimeTreeColliders">
+            <summary>
+            Positions tree colliders near the player.
+            </summary>
+            <remarks>
+            The trees used on the terrain must contain a capsule collider defining the tree trunk.
+            The player is found using the "Player" tag.
+            The colliders are parented to the terrain in the hierarchy.
+            </remarks>
+        </member>
+        <member name="F:RobinTheilade.RuntimeTreeCollision.RuntimeTreeColliders.diagonalLength">
+            <summary>
+            The length of the diagonal of the square that defines the area around the player to look for trees.
+            A high number might result in performance issues.
+            A low number might result in trees that can be passed through.
+            </summary>
+        </member>
+        <member name="F:RobinTheilade.RuntimeTreeCollision.RuntimeTreeColliders.maxColliders">
+            <summary>
+            The maximum number of colliders to create.
+            A high number might result in performance issues.
+            A low number might result in trees that can be passed through.
+            </summary>
+        </member>
+        <member name="F:RobinTheilade.RuntimeTreeCollision.RuntimeTreeColliders.player">
+            <summary>
+            The player the colliders must follow.
+            </summary>
+        </member>
+        <member name="F:RobinTheilade.RuntimeTreeCollision.RuntimeTreeColliders.terrain">
+            <summary>
+            A reference to the terrain component.
+            </summary>
+        </member>
+        <member name="F:RobinTheilade.RuntimeTreeCollision.RuntimeTreeColliders.data">
+            <summary>
+            A reference to the terrain data.
+            </summary>
+        </member>
+        <member name="F:RobinTheilade.RuntimeTreeCollision.RuntimeTreeColliders.lastChangePosition">
+            <summary>
+            The position when the colliders were last changed.
+            </summary>
+        </member>
+        <member name="F:RobinTheilade.RuntimeTreeCollision.RuntimeTreeColliders.colliders">
+            <summary>
+            The colliders managed by this component.
+            </summary>
+        </member>
+        <member name="F:RobinTheilade.RuntimeTreeCollision.RuntimeTreeColliders.infos">
+            <summary>
+            The tree instance info components attached to the colliders.
+            </summary>
+        </member>
+        <member name="F:RobinTheilade.RuntimeTreeCollision.RuntimeTreeColliders.trees">
+            <summary>
+            Quadtree for fast lookup by the player's position.
+            </summary>
+        </member>
+        <member name="F:RobinTheilade.RuntimeTreeCollision.RuntimeTreeColliders.diagonalLengthOver2">
+            <summary>
+            Half the length of <see cref="F:diagonalLength"/>.
+            </summary>
+        </member>
+        <member name="M:RobinTheilade.RuntimeTreeCollision.RuntimeTreeColliders.Start">
+            <summary>
+            Caches quick references and initializes the quadtree.
+            </summary>
+            <remarks>
+            This method is invoked by Unity.
+            </remarks>
+        </member>
+        <member name="M:RobinTheilade.RuntimeTreeCollision.RuntimeTreeColliders.FixedUpdate">
+            <summary>
+            Changes the colliders based on which trees the player is near.
+            </summary>
+            <remarks>
+            This method is invoked by Unity.
+            </remarks>
+        </member>
+        <member name="M:RobinTheilade.RuntimeTreeCollision.RuntimeTreeColliders.SetupChildColliders(UnityEngine.CapsuleCollider,UnityEngine.CapsuleCollider)">
+            <summary>
+            Creates, updates, enables and disables child colliders.
+            </summary>
+            <param name="currentCollider">
+            The parent collider.
+            </param>
+            <param name="prototypeCollider">
+            The prototype collider containing the child colliders to base the child colliders on.
+            </param>
+        </member>
+        <member name="M:RobinTheilade.RuntimeTreeCollision.RuntimeTreeColliders.CopyCapsuleColliderProperties(UnityEngine.CapsuleCollider,UnityEngine.CapsuleCollider)">
+            <summary>
+            Copies the capsule collider specific properties from one <see cref="T:UnityEngine.CapsuleCollider"/> to another.
+            </summary>
+            <param name="from">
+            The <see cref="T:UnityEngine.CapsuleCollider"/> containing the properties to copy.
+            </param>
+            <param name="to">
+            The <see cref="T:UnityEngine.CapsuleCollider"/> to apply the properties to.
+            </param>
+        </member>
+        <member name="M:RobinTheilade.RuntimeTreeCollision.RuntimeTreeColliders.AddTree(UnityEngine.TreeInstance)">
+            <summary>
+            Adds the specified <paramref name="treeInstance"/>
+            to the collection of trees who's collider to manage.
+            </summary>
+            <param name="treeInstance">
+            The <see cref="T:UnityEngine.TreeInstance"/> to add.
+            </param>
+        </member>
+        <member name="M:RobinTheilade.RuntimeTreeCollision.RuntimeTreeColliders.RemoveTree(UnityEngine.TreeInstance)">
+            <summary>
+            Removes the specified <paramref name="treeInstance"/>
+            from the collection of trees who's collider to manage.
+            </summary>
+            <param name="treeInstance">
+            The <see cref="T:UnityEngine.TreeInstance"/> to remove.
+            </param>
+        </member>
+        <member name="T:RobinTheilade.RuntimeTreeCollision.TreeInstanceInfo">
+            <summary>
+            Provides a reference to the tree that was collided with.
+            </summary>
+        </member>
+        <member name="F:RobinTheilade.RuntimeTreeCollision.TreeInstanceInfo.treeInstance">
+            <summary>
+            The reference to the tree that was collided with.
+            </summary>
+        </member>
+        <member name="F:RobinTheilade.RuntimeTreeCollision.TreeInstanceInfo.terrain">
+            <summary>
+            The reference to the terrain the tree belongs to.
+            </summary>
+        </member>
+        <member name="P:RobinTheilade.RuntimeTreeCollision.TreeInstanceInfo.TreePrototype">
+            <summary>
+            Gets the prototype of the tree.
+            </summary>
+        </member>
+        <member name="P:RobinTheilade.RuntimeTreeCollision.TreeInstanceInfo.TreeInstanceIndex">
+            <summary>
+            Gets the index of the instance in the <see cref="F:UnityEngine.TerrainData.treeInstances"/> array.
+            </summary>
+        </member>
+    </members>
+</doc>

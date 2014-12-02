@@ -15,3 +15,15 @@
 
 #Unity3D Generated File On Crash Reports
 sysinfo.txt
+*.suo
+*.user
+/Unity/*.csproj
+/Unity/*.sln
+/Unity/*.userprefs
+/Code/RobinTheilade.UnityFramework.Editor/bin/Debug
+/Code/RobinTheilade.UnityFramework/bin/Debug
+/Code/RobinTheilade.UnityFramework/bin
+/Code/RobinTheilade.UnityFramework.Editor/bin
+*.userprefs
+/Code/RobinTheilade.RuntimeTreeCollision/bin/Debug
+/Code/RobinTheilade.RuntimeTreeCollision/bin/Release

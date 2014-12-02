@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RobinTheilade.UnityFramework.Editor</name>
+    </assembly>
+    <members>
+        <member name="T:RobinTheilade.UnityFramework.EditorApplicationEx">
+            <summary>
+            Provides a set of helper methods for working with the <see cref="T:UnityEditor.EditorApplication"/> class.
+            </summary>
+        </member>
+        <member name="F:RobinTheilade.UnityFramework.EditorApplicationEx.editorApplicationType">
+            <summary>
+            The <see cref="T:SystemType"/> of <see cref="T:UnityEditor.EditorApplication"/> class.
+            </summary>
+        </member>
+        <member name="F:RobinTheilade.UnityFramework.EditorApplicationEx.setSceneRepaintDirtyMethod">
+            <summary>
+            The <see cref="T:System.Reflection.MethodInfo"/> of the <see cref="T:UnityEditor.EditorApplication.SetSceneRepaintDirty"/> method.
+            </summary>
+        </member>
+        <member name="M:RobinTheilade.UnityFramework.EditorApplicationEx.SetSceneRepaintDirty">
+            <summary>
+            Flags repainting of the scene.
+            </summary>
+        </member>
+        <member name="T:RobinTheilade.UnityFramework.EditorGUIUtilityEx">
+            <summary>
+            Provides a set of helper methods for working with GUI in the editor.
+            </summary>
+        </member>
+        <member name="F:RobinTheilade.UnityFramework.EditorGUIUtilityEx.editorGuiUtilityType">
+            <summary>
+            The <see cref="T:SystemType"/> of <see cref="T:UnityEditor.EditorGUIUtility"/> class.
+            </summary>
+        </member>
+        <member name="F:RobinTheilade.UnityFramework.EditorGUIUtilityEx.textContentMethod">
+            <summary>
+            The <see cref="T:System.Reflection.MethodInfo"/> of the <see cref="T:UnityEditor.EditorGUIUtility.TextContent"/> method.
+            </summary>
+        </member>
+        <member name="M:RobinTheilade.UnityFramework.EditorGUIUtilityEx.TextContent(System.String)">
+            <summary>
+            Returns the GUIContent from the Unity builtin resources with the specified <paramref name="name"/>.
+            </summary>
+            <param name="name">
+            The name of the builtin resource.
+            </param>
+            <returns>
+            The builtin text resource.
+            </returns>
+        </member>
+        <member name="T:RobinTheilade.UnityFramework.ShaderUtilEx">
+            <summary>
+            Provides a set of helper methods for working with the <see cref="T:UnityEngine.Shader"/> class.
+            </summary>
+        </member>
+        <member name="F:RobinTheilade.UnityFramework.ShaderUtilEx.shaderUtilType">
+            <summary>
+            The <see cref="T:SystemType"/> of <see cref="T:UnityEditor.ShaderUtil"/> class.
+            </summary>
+        </member>
+        <member name="F:RobinTheilade.UnityFramework.ShaderUtilEx.hasTangentChannelMethod">
+            <summary>
+            The <see cref="T:System.Reflection.MethodInfo"/> of the <see cref="T:UnityEditor.ShaderUtil.HasTangentChannel"/> method.
+            </summary>
+        </member>
+        <member name="M:RobinTheilade.UnityFramework.ShaderUtilEx.HasTangentChannel(UnityEngine.Shader)">
+            <summary>
+            Returns a value indicating if the specified <paramref name="shader"/> has a tangent channel.
+            </summary>
+            <param name="shader">
+            The shader to query.
+            </param>
+            <returns>
+            true if the shader has a tangent channel; otherwise false.
+            </returns>
+        </member>
+        <member name="T:RobinTheilade.UnityFramework.TerrainEx">
+            <summary>
+            Provides helper methods for working with the <see cref="T:UnityEngine.Terrain"/> class.
+            </summary>
+        </member>
+        <member name="F:RobinTheilade.UnityFramework.TerrainEx.terrainType">
+            <summary>
+            The <see cref="T:SystemType"/> of <see cref="T:UnityEngine.Terrain"/> class.
+            </summary>
+        </member>
+        <member name="F:RobinTheilade.UnityFramework.TerrainEx.drawTreesAndFoliageField">
+            <summary>
+            The <see cref="T:System.Reflection.FieldInfo"/> of the <see cref="T:UnityEngine.Terrain.drawTreesAndFoliage"/> field.
+            </summary>
+        </member>
+        <member name="M:RobinTheilade.UnityFramework.TerrainEx.DrawTreesAndFoliage(UnityEngine.Terrain)">
+            <summary>
+            Returns a value indicating if tree and foliage is drawn on the specified <paramref name="terrain"/>.
+            </summary>
+            <param name="terrain">
+            The <see cref="T:UnityEngine.Terrain"/> to query.
+            </param>
+            <returns>
+            true if trees and foliage is drawn; otherwise false.
+            </returns>
+        </member>
+        <member name="M:RobinTheilade.UnityFramework.TerrainEx.DrawTreesAndFoliage(UnityEngine.Terrain,System.Boolean)">
+            <summary>
+            Assigns a value indicating if tree and foliage is drawn on the specified <paramref name="terrain"/>.
+            </summary>
+            <param name="terrain">
+            The <see cref="T:UnityEngine.Terrain"/> to change.
+            </param>
+            <param name="value">
+            true if trees and foliage is drawn; otherwise false.
+            </param>
+        </member>
+    </members>
+</doc>
