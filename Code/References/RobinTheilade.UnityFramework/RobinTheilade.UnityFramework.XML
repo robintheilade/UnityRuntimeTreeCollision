@@ -219,6 +219,14 @@
             The boundaries of this region.
             </summary>
         </member>
+        <member name="M:RobinTheilade.Quadtree`1.#ctor(UnityEngine.Rect)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Quadtree`1"/> class.
+            </summary>
+            <param name="boundaries">
+            The boundaries of the region.
+            </param>
+        </member>
         <member name="M:RobinTheilade.Quadtree`1.#ctor(UnityEngine.Rect,System.Int32)">
             <summary>
             Initializes a new instance of the <see cref="T:Quadtree`1"/> class.
